@@ -147,9 +147,9 @@ function mudar3(){
 	window.location.href = "maquina.html"
 }
 
-function reserva(){
+function compra(){
 
-  window.location.href = "reservar.html";
+  window.location.href = "comprar.html";
 }
 
 
