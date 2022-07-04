@@ -129,5 +129,15 @@ h2{
 }
 
 
+input:invalid{
+    border-color: crimson;
+    box-shadow:  1px crimson;
+  }
 
+  input:focus{
+    outline: none;
+  }
+  input:focus:invalid{
+    box-shadow: none;
+  }
 

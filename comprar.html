@@ -42,18 +42,19 @@
                 <input type = "text" name="nome"  id="nome" required maxlength="25" minlength="2"> 
                 </label >
                 <br>
-                <label for = "inputEmail" > Endereço de Email : </label >
-                  <input type="email" id="inputEmail"  required  maxlength="50">
-                  <br>
+
+                <label for = "inputEmail" > Endereço de Email :
+                <input type="email" id="inputEmail"  required  maxlength="50">
+                <span id="email invalido">  </span> 
+                </label >
+                <br>
         
-                <label>CPF:
-                <input name="cpf" type="text" id="cpf" value="" size="10" maxlength="14"
-                onblur="TestaCPF(this)" /></label>
+                <label for ="inputCpf">CPF:
+                <input type="text" name="cpf"  id="cpf" value="" size="10" required maxlength="14"     ></label>
                 <br>
         
                 <label>Cep:
-                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                onblur="pesquisacep(this.value);" /></label>
+                <input name="cep" type="text" id="cep" value="" size="10" required maxlength="9" onblur="pesquisacep(this.value);" /></label>
                 <br>
         
                 <label>Rua:
@@ -72,7 +73,7 @@
                 <input name="uf" type="text" id="uf" size="2" /></label>
                 <br>
         
-                <button onclick="finaliza()">finalizar</button>
+                <button  id="submit" name="submit" type="submit"  onclick="validarEmail()">finalizar</button>
         
               </form>
             </article>

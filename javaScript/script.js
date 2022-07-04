@@ -67,6 +67,10 @@ else {
 }
 };
 
+
+
+//cookie-----------------
+
 function setCookie(cname,cvalue,exdays) {
 	const d = new Date();
 	d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -102,9 +106,7 @@ function setCookie(cname,cvalue,exdays) {
 	}
   }
 
-
-
-
+//-----------------
 
 
 function mudar1(){
@@ -151,7 +153,6 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -164,3 +165,27 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+function validarEmail(){
+    var email = document.querySelector('#email');
+    var error = document.querySelector('#error-email');
+    
+    if(!email.checkValidity()){
+      error.innerHTML = "Email invalido";  
+    }
+
+    else{
+        window.location.href="produtos.html"
+    }
+     
+  }
+  
+  function redefinirMsg(){
+    var error = document.querySelector('#error-email');
+    if (error.innerHTML == "Email invalido"){
+      error.innerHTML = "";
+    }
+  }
+
+
