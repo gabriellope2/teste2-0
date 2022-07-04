@@ -154,6 +154,9 @@ function mudar4(){
 function mudar5(){
     window.location.href="secadora.html"
 }
+function mudar6(){
+    window.location.href="exaustor.html"
+}
 
 
 function compra(){
