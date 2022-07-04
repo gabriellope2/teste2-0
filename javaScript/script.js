@@ -146,6 +146,11 @@ function mudar3(){
 
 	window.location.href = "maquina.html"
 }
+function mudar4(){
+
+	window.location.href = "micro.html"
+}
+
 
 function compra(){
 
