@@ -12,7 +12,8 @@ header{
      }
 
 article{
-    background-color: rgb(117, 165, 212); height: 500px;
+    background: rgba(183, 179, 179, 0.8);
+    backdrop-filter: saturate(18);
     float : left;
 
 }
@@ -45,7 +46,8 @@ ul {
     min-width:300px;
     height: auto;
     border: 1px solid rgb(12, 26, 224);
-    background: transparent ;
+    background: rgba(183, 179, 179, 0.8);
+    backdrop-filter: saturate(18);
     width:125px;
     margin-top:20px;
     
@@ -74,6 +76,7 @@ h2{
     width: auto; 
     margin-left: 100px;
     text-align: center;
+
 
 }
 
