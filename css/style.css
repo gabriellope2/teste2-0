@@ -1,0 +1,133 @@
+@charset "utf-8"; 
+header{
+    background-color:rgb(39, 56, 70);
+    height:auto;
+
+    
+} 
+
+#logo {  
+     height: 80px
+     
+     }
+
+article{
+    background-color: rgb(117, 165, 212); height: 500px;
+    float : left;
+
+}
+
+
+nav{ 
+
+       background-color: rgb(72, 126, 153);
+}
+
+
+ul {
+    list-style-type: none; margin: 0; padding: 0; overflow: hidden;
+
+}
+
+.nav2{
+
+    float:center;
+  
+}
+
+.produto {
+    
+    height: 150px; right:  150px; 
+}
+
+.conteudo{
+ 
+    min-width:300px;
+    height: auto;
+    border: 1px solid rgb(12, 26, 224);
+    background: #b0c1ff;
+    width:125px;
+    margin-top:20px;
+    
+
+}
+
+li { 
+    font-size: 31px;
+}
+form{
+
+
+    text-align: center;
+}
+
+h1{
+    font-size: 22px;
+}
+h2{
+
+    font-size: 18px;
+}
+
+.card{
+    
+    width: auto; 
+    margin-left: 100px;
+    text-align: center;
+
+}
+
+
+
+/* css para o botao menu */
+
+.dropbtn {
+    background-color: #0a1115;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: rgb(207, 233, 250);}
+  
+  .show {display: block;}
+
+
+
+#container-imagem {
+
+    background: url('../imagens/ícone-de-fundo-dos-eletrodomésticos-do-vetor-dispositivos-domésticos-213491936.jpg');
+  
+}
+
+
+
+
