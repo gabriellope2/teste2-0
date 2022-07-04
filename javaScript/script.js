@@ -151,6 +151,10 @@ function mudar4(){
 	window.location.href = "micro.html"
 }
 
+function mudar5(){
+    window.location.href="secadora.html"
+}
+
 
 function compra(){
 
