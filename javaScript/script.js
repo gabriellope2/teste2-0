@@ -102,37 +102,34 @@ function setCookie(cname,cvalue,exdays) {
 	}
   }
 
-function mudar(){
-
-        window.location.href = "menu.html"
-   }
 
 
- function validarCPF() {	
-     var cpf =  document.getElementById("cpf")
-	if(cpf == '') return false;	
 
-			
+  function TestaCPF(strCPF) {
+    var Soma;
+    var Resto;
+    Soma = 0;
+  if (strCPF == "00000000000") return false;
 
-	add = 0;	
-	for (i=0; i < 9; i ++)		
-		add += parseInt(cpf.charAt(i)) * (10 - i);	
-		rev = 11 - (add % 11);	
-		if (rev == 10 || rev == 11)		
-			rev = 0;	
-		if (rev != parseInt(cpf.charAt(9)))		
-			return false;		
+  for (i=1; i<=9; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (11 - i);
+  Resto = (Soma * 10) % 11;
 
-	add = 0;	
-	for (i = 0; i < 10; i ++)		
-		add += parseInt(cpf.charAt(i)) * (11 - i);	
-	rev = 11 - (add % 11);	
-	if (rev == 10 || rev == 11)	
-		rev = 0;	
-	if (rev != parseInt(cpf.charAt(10)))
-		return false;		
-	return true;   
+    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+    if (Resto != parseInt(strCPF.substring(9, 10)) ) return false;
+
+  Soma = 0;
+    for (i = 1; i <= 10; i++) Soma = Soma + parseInt(strCPF.substring(i-1, i)) * (12 - i);
+    Resto = (Soma * 10) % 11;
+
+    if ((Resto == 10) || (Resto == 11))  Resto = 0;
+    if (Resto != parseInt(strCPF.substring(10, 11) ) ) return false;
+    return true;
 }
+var strCPF = "12345678909";
+alert(TestaCPF(strCPF));
+
+
+
 function mudar1(){
 
 	window.location.href = "fogao.html"
@@ -150,39 +147,34 @@ function mudar4(){
 
 	window.location.href = "micro.html"
 }
-
 function mudar5(){
     window.location.href="secadora.html"
 }
 function mudar6(){
     window.location.href="exaustor.html"
 }
-
-
 function compra(){
 
   window.location.href = "comprar.html";
 }
-
 function finaliza(){
 
     window.location.href= "produtos.html"
 }
+function mudar(){
+
+        window.location.href = "menu.html"
+   }
 
 
 
 
 
-
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
