@@ -152,6 +152,10 @@ function compra(){
   window.location.href = "comprar.html";
 }
 
+function finaliza(){
+
+    window.location.href= "produtos.html"
+}
 
 
 
